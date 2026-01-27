@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-              sh 'docker run -itd --name app2 -p 8081:8080 tomcat:app'
+              sh 'docker run -itd --name app2 -p 8083:8080 tomcat:app'
             }
         }
     }
